@@ -1,0 +1,67 @@
+<h1>Strona miasta {{ city.name }}</h1>
+<p>Liczba mieszkańców: {{ city.population }}</p>
+<p>Aktualna temperatura: {{ temperature }}°C</p>
+
+<html>
+  <head>
+    <title>Prognoza pogody dla miasta</title>
+  </head>
+  <body>
+    <h1>Prognoza pogody dla miasta</h1>
+    <table>
+      <tr>
+        <th>Data</th>
+        <th>Dzień tygodnia</th>
+        <th>Temperatura maksymalna</th>
+        <th>Temperatura minimalna</th>
+      </tr>
+      <tr>
+        <td>{{ onet.0.forecast_0.date }}</td>
+        <td>{{ onet.0.forecast_0.weekday }}</td>
+        <td>{{ onet.0.forecast_0.temp1 }}</td>
+        <td>{{ onet.0.forecast_0.temp2 }}</td>
+      </tr>
+      <tr>
+        <td>{{ onet.1.forecast_1.date }}</td>
+        <td>{{ onet.1.forecast_1.weekday }}</td>
+        <td>{{ onet.1.forecast_1.temp1 }}</td>
+        <td>{{ onet.1.forecast_1.temp2 }}</td>
+      </tr>
+      <tr>
+        <td>{{ onet.2.forecast_2.date }}</td>
+        <td>{{ onet.2.forecast_2.weekday }}</td>
+        <td>{{ onet.2.forecast_2.temp1 }}</td>
+        <td>{{ onet.2.forecast_2.temp2 }}</td>
+      </tr>
+      <tr>
+        <td>{{ onet.3.forecast_3.date }}</td>
+        <td>{{ onet.3.forecast_3.weekday }}</td>
+        <td>{{ onet.3.forecast_3.temp1 }}</td>
+        <td>{{ onet.3.forecast_3.temp2 }}</td>
+      </tr>
+      <tr>
+        <td>{{ onet.4.forecast_4.date }}</td>
+        <td>{{ onet.4.forecast_4.weekday }}</td>
+        <td>{{ onet.4.forecast_4.temp1 }}</td>
+        <td>{{ onet.4.forecast_4.temp2 }}</td>
+      </tr>
+      <tr>
+        <td>{{ onet.5.forecast_5.date }}</td>
+        <td>{{ onet.5.forecast_5.weekday }}</td>
+        <td>{{ onet.5.forecast_5.temp1 }}</td>
+        <td>{{ onet.5.forecast_5.temp2 }}</td>
+      </tr>
+      <tr>
+        <td>{{ onet.6.forecast_6.date }}</td>
+        <td>{{ onet.6.forecast_6.weekday }}</td>
+        <td>{{ onet.6.forecast_6.temp1 }}</td>
+        <td>{{ onet.6.forecast_6.temp2 }}</td>
+      </tr>
+      <tr>
+        <td>{{ interia.0.forecast_0.date }}</td>
+        <td>{{ interia.0.forecast_0.weekday }}</td>
+        <td>{{ interia.0.forecast_0.temp1 }}</td>
+        <td>{{ interia.0.forecast_0.temp2 }}</td>
+      </tr>
+  </table>
+  

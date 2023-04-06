@@ -1,0 +1,6 @@
+<h1>Lista miast:</h1>
+<ul>
+{% for city in cities %}
+    <li><a href="{% url 'city_page' city %}">{{ city }}</a></li>
+{% endfor %}
+</ul>
